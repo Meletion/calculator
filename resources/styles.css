@@ -1,0 +1,71 @@
+
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar { display: none; }
+html { scroll-behavior: smooth; }
+
+html, body {
+  overscroll-behavior: none;
+  background-color: rgb(34, 34, 34);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#output {
+  flex-shrink: 0; /* don't shrink */
+  height: 15vh;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  margin: 1vw 1vw 1vw 1vw;
+  background-color: rgb(50, 50, 50);
+  caret-color: transparent; /* hides the text cursor */
+}
+
+#output:focus {
+
+  outline: none; /* removes the default blue browser outline */
+}
+
+#numbers {
+  flex: 1; /* take up all remaining space */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr); /* 6 rows to fit all buttons */
+  gap: 8px;
+  padding: 8px;
+  width: 100%;
+}
+
+button {
+  padding: 0;
+  font-size: clamp(1.2rem, 5vw, 2.5rem);
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(64, 64, 64);
+  color: white;
+  transition: background-color 0.2s;
+  width: 100%;
+  height: 100%;
+}
+button:active {
+  background-color: rgb(80, 80, 80);
+}
+
+#version {
+  position: fixed;
+  top: 8px;
+  right: 8px;
+  margin: 0;
+  font-size: 0.8rem;
+  color: rgb(150, 150, 150);
+}
