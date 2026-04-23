@@ -10,7 +10,12 @@ This is a calculator I made with neutralino.js
 - Neutalino 
 - [Git](https://git-scm.com)
 - A couple minutes of your time
-On to the tutorial
+
+
+
+Anyways, on to the tutorial
+
+
 1. Clone the repo
 
 Run `git clone https://github.com/Meletion/calculator.git`, this will download the repo under the "calculator folder", then cd into with `cd calculator`
